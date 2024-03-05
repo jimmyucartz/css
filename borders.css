@@ -1,0 +1,42 @@
+.bordered {
+  height: 15vh;
+  padding: 2dvi;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(153, 95, 95);
+}
+
+.bordered_alt {
+  margin: 4px;
+  height: 15vh;
+  padding: 2dvi;
+  border: 3px rebeccapurple dashed;
+}
+
+.bordered_alter {
+  margin: 5px;
+  height: 15vh;
+  padding: 2dvi;
+  border: 3px rebeccapurple double;
+}
+
+.rounded_border {
+  margin: 5px;
+  height: 15vh;
+  padding: 2dvi;
+  border: 3px rgb(39, 158, 26) solid;
+  border-radius: 30px;
+}
+
+#table1,
+#table2 {
+  border: 1px rgb(15, 16, 15) solid;
+  td,
+  th {
+    border: 1px rgb(15, 16, 15) solid;
+  }
+}
+
+#table2 {
+  border-collapse: collapse;
+}
