@@ -24,5 +24,69 @@
       <b id="internal_css">Internal CSS styling</b>
       <b id="external_css">External CSS styling</b>
     </section>
+    <section>
+      <h3>CSS Selectors</h3>
+      <h4 class="sub-heading">Element Selector</h4>
+      Hello <mark>Peter</mark>
+      <h4 class="sub-heading">Class Selector</h4>
+      Examples are:
+      <ul>
+        <li class="example">Example 1</li>
+        <li class="example">Example 2</li>
+        <li class="example">Example 3</li>
+      </ul>
+      <h4 class="sub-heading">ID Selector</h4>
+      <button id="redirect_btn">Take me to a tour</button>
+      <h4 class="sub-heading">Attribute Selector</h4>
+      <input placeholder="Attribute Selector" type="text" />
+      <h4 class="sub-heading">Descendant Selector</h4>
+
+      <div>
+        <h4>Descendant</h4>
+        <p>Descendant p tag - descendant of div tag</p>
+        <h6>Descendant</h6>
+        <span>Descendant</span>
+        <span>
+          <p>Descendant p tag - descendant of div tag</p>
+        </span>
+      </div>
+
+      <h4 class="sub-heading">Child Selector</h4>
+
+      <div>
+        <i>styled by child selection</i>
+      </div>
+
+      <div>
+        <i>styled by child selection</i>
+      </div>
+
+      <div>
+        <b>
+          <i>not styled by child selection because not direct child of div</i>
+        </b>
+      </div>
+
+      <h4 class="sub-heading">Adjacent Sibling Selector</h4>
+      <h5>Adjancent sibling below this will have style applied</h5>
+      <span>Span adjacent sibling of h5</span>
+      <h5>Adjancent sibling below this will have style applied</h5>
+      <span>Span adjacent sibling of h5</span>
+      <h5>Adjancent sibling below this will have style applied</h5>
+      <i>hi</i> <wbr />
+      <span
+        >Hello -Dont have style applied because it is is not Adjacent
+        sibling</span
+      >
+
+      <h4 class="sub-heading">General Sibling Selector</h4>
+      <h6>Sibling &lt;span&gt; below this will have style applied</h6>
+      <span>Span general sibling of h6</span>
+      <h6>Sibling &lt;span;&gt; below this will have style applied</h6>
+      <span>Span general sibling of h6</span>
+      <h6>Sibling &lt;span;&gt; below this will have style applied</h6>
+      <i>hi</i>
+      <span>Span general sibling of h6</span>
+    </section>
   </body>
 </html>
