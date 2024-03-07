@@ -3,90 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      b {
-        display: block;
-      }
-      #internal_css {
-        color: rgb(92, 62, 62);
+      .para {
+        background-color: rgb(203, 254, 0);
       }
     </style>
-    <title>Style using CSS</title>
+    <title>Revise CSS</title>
   </head>
   <body>
-    <header>
-      <h2>CSS - Cascade style sheet</h2>
-    </header>
-    <section>
-      <h3>Css Types</h3>
-      <b id="inline_css" style="color: rgb(96, 156, 136)">Inline CSS styling</b>
-      <b id="internal_css">Internal CSS styling</b>
-      <b id="external_css">External CSS styling</b>
+    <section style="width: 800px">
+      <h3>Which type of CSS holds the highest priority</h3>
+      <p class="para" style="background-color: rgb(141, 91, 27)">
+        Inline CSS has the highest priority, then comes Internal/Embedded
+        followed by External CSS which has the least priority. Multiple style
+        sheets can be defined on one page. For an HTML tag, styles can be
+        defined in multiple style types and follow the below order.
+      </p>
+      <p class="para">
+        2.Inline CSS has the highest priority, then comes Internal/Embedded
+        followed by External CSS which has the least priority. Multiple style
+        sheets can be defined on one page. For an HTML tag, styles can be
+        defined in multiple style types and follow the below order.
+      </p>
     </section>
     <section>
-      <h3>CSS Selectors</h3>
-      <h4 class="sub-heading">Element Selector</h4>
-      Hello <mark>Peter</mark>
-      <h4 class="sub-heading">Class Selector</h4>
-      Examples are:
-      <ul>
-        <li class="example">Example 1</li>
-        <li class="example">Example 2</li>
-        <li class="example">Example 3</li>
-      </ul>
-      <h4 class="sub-heading">ID Selector</h4>
-      <button id="redirect_btn">Take me to a tour</button>
-      <h4 class="sub-heading">Attribute Selector</h4>
-      <input placeholder="Attribute Selector" type="text" />
-      <h4 class="sub-heading">Descendant Selector</h4>
-
-      <div>
-        <h4>Descendant</h4>
-        <p>Descendant p tag - descendant of div tag</p>
-        <h6>Descendant</h6>
-        <span>Descendant</span>
-        <span>
-          <p>Descendant p tag - descendant of div tag</p>
-        </span>
+      <h3>Margin - Padding</h3>
+      <div class="outer_element">
+        <div class="margin_padding">
+          <div class="inner_element">
+            <ul>
+              <li>
+                Margin: It is the space around an element. Margins are used to
+                move an element up or down on a page as well as left or right.
+              </li>
+              <li>
+                Padding: It is the space between the element and the related
+                content inside it.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h4 class="sub-heading">Child Selector</h4>
-
-      <div>
-        <i>styled by child selection</i>
+    <section style="height: 30dvh; background-color: darkgrey">
+      <h3>Relative vs Absolute Position</h3>
+      <div class="rel_div">
+        An element with position: relative; is positioned relative to its normal
+        position.<br />
+        Setting the top, right, bottom, and left properties of a
+        relatively-positioned element will cause it to be adjusted away from its
+        normal position. Other content will not be adjusted to fit into any gap
+        left by the element.
       </div>
-
-      <div>
-        <i>styled by child selection</i>
+      <div class="abs_div">
+        An element with position: absolute; is positioned relative to the
+        nearest positioned ancestor (instead of positioned relative to the
+        viewport, like fixed). <br />
+        However; if an absolute positioned element has no positioned ancestors,
+        it uses the document body, and moves along with page scrolling.
       </div>
-
-      <div>
-        <b>
-          <i>not styled by child selection because not direct child of div</i>
-        </b>
+    </section>
+    <section style="margin-top: 100px">
+      <h3>What does the 'a' in rgba mean?</h3>
+      <div class="rbga_color">
+        rgba(red, green, blue, alpha -> transparency/opacity of colors)<br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+        ratione?
       </div>
+    </section>
+    <section>
+      <h3>HSL</h3>
+      <div class="hsl_color">
+        ...>hsl(hue, saturation, lightness) <br />
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+        distinctio quibusdam sint dolor labore iste assumenda mollitia
+        consequatur animi cupiditate!
+      </div>
+    </section>
+    <section>
+      <h3>Border vs Outline</h3>
+      <p style="background-color: inherit">
+        The CSS border properties allow you to specify the style and color of an
+        element's border. <br />
 
-      <h4 class="sub-heading">Adjacent Sibling Selector</h4>
-      <h5>Adjancent sibling below this will have style applied</h5>
-      <span>Span adjacent sibling of h5</span>
-      <h5>Adjancent sibling below this will have style applied</h5>
-      <span>Span adjacent sibling of h5</span>
-      <h5>Adjancent sibling below this will have style applied</h5>
-      <i>hi</i> <wbr />
-      <span
-        >Hello -Dont have style applied because it is is not Adjacent
-        sibling</span
-      >
+        An outline is a line that is drawn around elements (outside the borders)
+        to make the element "stand out".
 
-      <h4 class="sub-heading">General Sibling Selector</h4>
-      <h6>Sibling &lt;span&gt; below this will have style applied</h6>
-      <span>Span general sibling of h6</span>
-      <h6>Sibling &lt;span;&gt; below this will have style applied</h6>
-      <span>Span general sibling of h6</span>
-      <h6>Sibling &lt;span;&gt; below this will have style applied</h6>
-      <i>hi</i>
-      <span>Span general sibling of h6</span>
+        <br />
+
+        Border is part of the box model so it counts against the element's size.
+        Outline is not part of the box model so it doesn't affect nearby
+        elements.
+      </p>
+      <div class="bordered_div">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        ducimus asperiores commodi sunt eos nesciunt quibusdam quod facere fugit
+        dolorum.
+      </div>
+      <br />
+      <br />
+      <div class="outlined_div">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, nihil
+        aspernatur quaerat velit ipsa est!
+      </div>
+      <br /><br />
+      <div class="outlined_div bordered_div2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, nihil
+        aspernatur quaerat velit ipsa est!
+      </div>
+    </section>
+    <section>
+      <h3>How to hide an element?</h3>
+      <div style="display: none; margin: 100px">This div is hidden</div>
+    </section>
+    <section style="background-color: darkorchid">
+      <h3>Float - inherit</h3>
+      <div style="float: right; padding: 50px; background-color: yellowgreen">
+        Parent element with float
+
+        <div style="width: 80px; background-color: rgb(32, 134, 178)">
+          Child Element 1 without float set
+        </div>
+        <div
+          style="
+            float: inherit;
+            width: 50px;
+            background-color: rgb(28, 144, 190);
+          "
+        >
+          Child Element 2 with float inherit set
+        </div>
+      </div>
+    </section>
+    <section style="height: 100dvh">
+      <h3>Different unit types of CSS - CSS units</h3>
+      <h4>Absolute Lengths</h4>
+      <p style="background-color: inherit">
+        <i>
+          The absolute length units are fixed and a length expressed in any of
+          these will appear as exactly that size. Absolute length units are not
+          recommended for use on screen, because screen sizes vary so much.
+        </i>
+      </p>
+      <div class="absolutesizes">Absolute sizes used</div>
+
+      <!-- <div class="sizeinrem">Size in Rem</div>
+      <div class="sizeinpercentage">Size in Percentage</div> -->
+
+      <h4>Relative Lengths</h4>
+      <p style="background-color: inherit">
+        <i>
+          Relative length units specify a length relative to another length
+          property. Relative length units scale better between different
+          rendering medium.
+        </i>
+      </p>
+      <div class="relativesizes">Relative Sizes</div>
+    </section>
+    <section>
+      <h3>Z - index</h3>
+      <p>
+        The z-index property specifies the stack order of an element. An element
+        with greater stack order is always in front of an element with a lower
+        stack order.
+      </p>
+      <div class="stackone">Stack One</div>
+      <div class="stacktwo">Stack Two</div>
+      <div class="stackthree">Stack Three</div>
     </section>
   </body>
 </html>

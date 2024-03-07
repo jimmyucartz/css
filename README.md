@@ -1,15 +1,10 @@
-## CSS
-
-- Syntax
-- Selectors
-- Colors - Backgrounds
-- Borders
-- Margins Padding
-- Height/Width
-- Box Model
-- Text Fonts
-- Icons
-- Links
-- List Tables
-- Display Positioning
-- Floats
+- Margin - Padding
+- Relative/Absolute Position
+- Which type of CSS holds the highest priority
+- What does the 'a' in rgba mean?
+- HSL
+- Border - Outline
+- How to hide an element?
+- Float - inherit
+- Different unit types of CSS
+- Z - index

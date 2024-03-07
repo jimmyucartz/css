@@ -1,0 +1,130 @@
+.para {
+  background-color: rgb(76, 76, 156);
+}
+
+.margin_padding {
+  padding: 20px;
+  margin: 100px;
+  border: gray 3px dashed;
+  background-color: darkkhaki;
+}
+
+.outer_element {
+  background-color: cornflowerblue;
+}
+
+.inner_element {
+  background-color: thistle;
+}
+
+.rel_div {
+  position: relative;
+  background-color: rgb(43, 189, 123);
+  width: 400px;
+  height: 200px;
+  right: 10px;
+  top: 20px;
+}
+
+.abs_div {
+  position: absolute;
+  background-color: darkmagenta;
+  width: 300px;
+  height: 200px;
+  top: 10px;
+  right: 10px;
+}
+
+.rbga_color {
+  color: rgba(25, 179, 107, 0.516);
+}
+
+.hsl_color {
+  color: hsl(77, 66%, 39%);
+}
+
+.bordered_div {
+  border-color: rgb(201, 67, 67);
+  border-width: 4px;
+  border-style: solid;
+}
+
+.bordered_div2 {
+  border-color: rgb(157, 226, 45);
+  border-width: 4px;
+  border-style: solid;
+}
+
+.outlined_div {
+  /* outline: 1cm saddlebrown; */
+  outline-style: solid;
+  outline-width: 4px;
+  outline-color: rgb(201, 67, 67);
+}
+
+.absolutesizes {
+  background-image: linear-gradient(to left top, blue, red);
+  width: 400px;
+  height: 2in;
+  padding-top: 10mm;
+  padding-left: 1.5cm;
+}
+
+.relativesizes {
+  background-image: linear-gradient(
+    to left top,
+    rgb(45, 45, 109),
+    rgb(93, 48, 48)
+  );
+  color: white;
+  width: 10vw;
+  height: 10%;
+  padding-top: 2rem;
+  padding-left: 20ch;
+  padding-bottom: 10ex;
+  padding-right: 12em;
+  margin-top: 10vmin;
+  margin-bottom: 14vmax;
+}
+
+.stackone {
+  background-image: linear-gradient(
+    to right top,
+    rgba(254, 116, 10, 0.564),
+    rgb(41, 133, 41)
+  );
+
+  width: 500px;
+  height: 100px;
+  position: relative;
+  left: 10px;
+  top: 70px;
+  z-index: 2;
+}
+
+.stacktwo {
+  background-image: linear-gradient(
+    to right top,
+    rgb(206, 37, 192),
+    rgb(34, 194, 34)
+  );
+  width: 500px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+  top: 50px;
+  z-index: 1;
+}
+
+.stackthree {
+  background-image: linear-gradient(
+    to right top,
+    rgb(237, 94, 94),
+    rgb(19, 76, 94)
+  );
+  width: 500px;
+  height: 100px;
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
